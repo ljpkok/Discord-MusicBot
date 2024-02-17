@@ -1,5 +1,18 @@
 <h1 align="center"><img src="./assets/logo.gif" width="30px"> Discord Music Bot <img src="./assets/logo.gif" width="30px"></h1>
 
+## ✨Latest Updates
+
+v5.1 Is in development! Go check it out [HERE!](https://github.com/wtfnotavailable/Discord-MusicBot)
+
+What do you gain from it? Let us explain:
+ - Completely modular docker environment for easier development and deployment
+ - A WORKING DASHBOARD!!!
+ - DB Integration for you to save your favorite songs in
+ - Integrated self hosted Lavalink
+ - Dedicated query channel
+ - More commands and functionalities
+ - And so much more to come!
+
 ## 🚧 | Prerequisites
 
 - [Node.js 16+](https://nodejs.org/en/download/)
@@ -19,7 +32,25 @@
 
 ## 📝 | Tutorial
 
-Soon
+### 🐳 Docker
+> The `config.js` file should be configured with the host `"lavalink"`, and you should use the same `password` as in `docker/application.yml`.
+
+Build and start bot and lavalink
+```sh
+docker-compose up -d --build
+```
+### 💪🏻 Non-Docker
+> The `config.js` file should be configured first. Don't forget to add a lavalink host
+
+Install all dependencies and deploy Slash Commands
+```sh
+npm install
+npm run deploy
+```
+Start the bot
+```sh
+node index.js
+```
 
 ## 📝 | [Support Server](https://discord.gg/sbySMS7m3v)
 
